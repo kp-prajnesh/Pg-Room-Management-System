@@ -5,6 +5,7 @@ include("../includes/db.php");
 $user_id = $_SESSION['user_id'];
 
 // Check if user has a room allocation
+//hello
 $query = "SELECT * FROM room_allocation WHERE user_id='$user_id'";
 $result = mysqli_query($conn, $query);
 $allocation = mysqli_fetch_assoc($result);
